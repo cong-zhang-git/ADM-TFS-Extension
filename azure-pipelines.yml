@@ -32,3 +32,9 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: RunFromFileSystemTask@5
+  inputs:
+    testPathInput: 'c:\MyTest'
+    uploadArtifact: 'no'
+    mcAuthType: 'basic'
